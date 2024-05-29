@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> FUNCTIONS IN JAVASCRIPT</h1>
+    <script>
+        //EXAMPLE 1
+        var myString="I am really hungry";
+        var upper=myString.toUpperCase();
+        console.log(upper);
+        //EXAMPLE 2
+        var variable_pos=myString.search("really");
+        console.log(variable_pos);
+        var string1=myString.substr(variable_pos,6);
+        var string1=string1.toUpperCase();
+        console.log(string1);
+        var newString=myString.replace("really",string1);
+        console.log(newString);
+        //EXAMPLE 3
+        var foods=["Rajma chawal","paneer bhurji","Dal chawal","Chole bhature"];
+        console.log(`${myString} ${foods[0]}`);
+        //EXAMPLE 4
+        for(var i of foods)
+        {
+            console.log(` ${myString} ${i}`);
+        }
+        //EXAMPLE 5
+        for(var i=0;i<foods.length;i++)
+        {
+            if(i%2===0)
+            {
+              foods[i]=foods[i].toUpperCase();
+              console.log(`${myString} ${foods[i]}`);
+            }
+            else
+            {
+               console.log(`${myString} ${foods[i]}`);
+            }
+
+        }
+        
+    </script>
+</body>
+</html>
