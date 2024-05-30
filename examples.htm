@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXAMPLES</title>
+</head>
+<body>
+    <script>
+    var foods=["Rajma chawal","paneer bhurji","Dal chawal","Chole bhature"];
+    console.log(Math.random());
+    //EXAMPLE 1
+    function randomInt(max,min)
+    {
+        var x=max-min+1;
+        console.log("The random number is generated is " +x);
+    }
+    randomInt(10,6);
+    var name=5;
+    //EXAMPLE 2
+    function random(max,min)
+    { //Creating a random integer from min and max
+        return (Math.floor((max-min+1)*(Math.random()))+min);
+    }
+    //EXAMPLE 3
+    console.log(random(10,5));
+    //EXAMPLE 5
+    console.log(foods[random(0,3)]);
+
+    //FUNCTIONS CAN BE ANONYMOUS
+    function return_upper(anystring)
+    {
+        anystring=anystring.toUpperCase();
+        return anystring;
+    }
+    var give_upper= function(anystring)
+    {
+        anystring=anystring.toUpperCase();
+        return anystring;
+    }
+    var spread=argument=>argument.toUpperCase();
+    console.log(return_upper('Ram is good'));
+    console.log(give_upper('Ram is good'));
+    console.log(spread('Ram is good'));
+    </script>
+</body>
+</html>
