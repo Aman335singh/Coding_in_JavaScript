@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript and DOM</title>
+</head>
+<body>
+    <p> Ram is not good</p>
+    <p> Aman is good at heart</p>
+    <p> I am done now !</p>
+    <script>
+       var m= document.getElementsByTagName('p'); //getElementByTagName
+       for(var x=0;x<m.length;x++)
+       {
+        m[x].style.color="Red";
+        alert(`Coloring the element ${x}`);
+       }
+    </script>
+</body>
+</html>
