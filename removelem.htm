@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Removing an Element in JS</title>
+</head>
+<body>
+    <div>
+        <p> The ending of today</p>
+        <p> The start of tomorrow</p>
+    </div>
+    <script>
+        var position=document.querySelector('div');
+        position.removeChild(position.children[1]);
+    </script>
+</body>
+</html>

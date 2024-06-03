@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATING ELEMENT AND TEXTNODE </title>
+</head>
+<body>
+    <div id="special">
+    <p> creating and learning are the thriving powers of human mind</p>
+    <p> when you stop, you are done with everything in your life</p>
+    </div>
+    <script> 
+    var text=document.createElement('p');
+    var textnode=document.createTextNode("Ram is a good boy");
+    text.append(textnode);
+    var myDiv=document.getElementById('special');
+    myDiv.append(text);
+    </script>
+</body>
+</html>
